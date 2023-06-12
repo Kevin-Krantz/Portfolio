@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #ffd700;
+}
+
+@import "animate.css";
+@import "~loaders.css/loaders.min.css";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../public/fonts/helvetica-neu.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("../public/fonts/LaBelleAurore.woff2") format("woff2"),
+    url("../public/fonts/LaBelleAurore.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../public/fonts/CoolveticaRg-Regular.woff2") format("woff2"),
+    url("../public/fonts/CoolveticaRg-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+textarea {
+  font-family: "Helvetica Neue";
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+.pacman > div:first-of-type,
+.pacman > div:nth-child(2) {
+  border-top: 25px solid var(--primary-color);
+  border-left: 25px solid var(--primary-color);
+  border-bottom: 25px solid var(--primary-color);
+}
+
+.pacman > div:nth-child(3),
+.pacman > div:nth-child(4),
+.pacman > div:nth-child(5),
+.pacman > div:nth-child(6) {
+  background-color: var(--primary-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.react-responsive-modal-overlay,
+.react-responsive-modal-container,
+.react-responsive-modal-modal {
+  animation-fill-mode: forwards !important;
+}
+
+.react-responsive-modal-modal {
+  max-height: 95vh !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #444;
+  background: #022c43;
+  overflow: hidden;
+  display: block;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
