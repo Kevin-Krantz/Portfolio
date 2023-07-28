@@ -25,6 +25,12 @@ export const CommonContainer = styled.div`
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+
+  @media screen and (max-width: 1200px) {
+    /* position: initial;
+    height: auto;
+    min-height: auto; */
+  }
 `;
 
 export const TextZone = styled.div`
@@ -73,6 +79,14 @@ export const TextZone = styled.div`
       opacity: 0.6;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    h1::before,
+    h1::after {
+      display: none;
+    }
+  }
+
   p {
     font-size: 13px;
     color: #fff;

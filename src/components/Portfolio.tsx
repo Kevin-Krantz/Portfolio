@@ -41,6 +41,17 @@ const Container = styled(CommonContainer)``;
 
 const ContainerPortfolioPage = styled(TextZone)`
   margin-top: 40px;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    left: 0;
+
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 
 const PageTitle = styled.h1``;

@@ -86,6 +86,16 @@ const LogoContainer = styled.div`
     width: 900px;
     bottom: 300px;
   }
+
+  @media screen and (max-width: 1200px) {
+    position: relative;
+    width: 200px;
+    height: auto;
+    box-sizing: border-box;
+    right: 0;
+    left: 60px;
+    top: 0;
+  }
 `;
 
 const SolidLogoImage = styled.img`

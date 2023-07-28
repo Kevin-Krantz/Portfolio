@@ -122,9 +122,21 @@ export default Contact;
 
 const Container = styled(CommonContainer)`
   margin-top: 16px;
+
+  @media screen and (max-width: 1200px) {
+    /* overflow: hidden; */
+  }
 `;
 
-const Text = styled(TextZone)``;
+const Text = styled(TextZone)`
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    left: 0;
+    top: 35vh;
+  }
+`;
 
 const InfoMap = styled.div`
   position: absolute;
@@ -149,6 +161,10 @@ const InfoMap = styled.div`
     padding-top: 20px;
     color: var(--primary-color);
   }
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 const MapWrap = styled.div`
@@ -164,6 +180,17 @@ const MapWrap = styled.div`
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+    height: 40%;
+    float: none;
+    margin: auto;
+
+    .leaflet-container {
+      margin-top: 70vh;
+    }
   }
 `;
 
@@ -223,6 +250,9 @@ const ContactForm = styled.div`
       border: 1px solid var(--primary-color);
       outline: 1px solid var(--primary-color);
     }
+  }
+
+  @media screen and (max-width: 1200px) {
   }
 `;
 

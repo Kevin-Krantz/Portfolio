@@ -25,11 +25,18 @@ export default Layout;
 const App = styled.div`
   display: flex;
   height: 100vh;
+
+  @media screen and (max-width: 1200px) {
+  }
 `;
 
 const Page = styled.div`
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    position: absolute;
+  }
 `;
 
 const Tags = styled.span`
@@ -39,6 +46,10 @@ const Tags = styled.span`
   left: 120px;
   font-size: 15px;
   font-family: "La Belle Aurore", cursive;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 const TopTags = styled(Tags)`

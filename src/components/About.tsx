@@ -83,6 +83,24 @@ const Container = styled(CommonContainer)``;
 
 const Text = styled(TextZone)`
   z-index: 1;
+
+  @media screen and (max-width: 1200px) {
+    position: initial;
+    transform: none;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 8px;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
 `;
 
 const StageCubeCont = styled.div`
@@ -94,6 +112,13 @@ const StageCubeCont = styled.div`
   position: absolute;
   right: 0;
   overflow: hidden;
+
+  @media screen and (max-width: 1200px) {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+  }
 `;
 
 const CubeSpinner = styled.div`

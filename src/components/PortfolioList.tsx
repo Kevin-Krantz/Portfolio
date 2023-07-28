@@ -53,6 +53,12 @@ const ImagesContainer = styled.div`
   flex-wrap: wrap;
   padding-bottom: 100px;
   width: 1100px;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: column;
+    display: block;
+  }
 `;
 
 const PortfolioImageArray = styled.img`
@@ -111,6 +117,10 @@ const PortfolioImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: fill;
+
+  @media screen and (max-width: 1200px) {
+    object-fit: contain;
+  }
 `;
 
 const Title = styled.p`

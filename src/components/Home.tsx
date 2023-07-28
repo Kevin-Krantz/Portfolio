@@ -114,6 +114,17 @@ const Container = styled(CommonContainer)`
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    h1::before,
+    h1::after {
+      display: none;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
   h2 {
     color: #8d8d8d;
     margin-top: 20px;
@@ -170,6 +181,30 @@ const TextZone = styled.div`
     &:hover {
       background: var(--primary-color);
       color: #333;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    a {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+    h1 {
+      position: initial;
+      width: 70%;
+      margin-left: 20%;
     }
   }
 `;
